@@ -1,0 +1,22 @@
+//Decimal to binary conversion
+
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int main() {
+    int ans=0, rem,i=0,n,number;
+    // Write C++ code here
+    cout << "enter to no to convert into binary";
+    cin>>number;
+    n=number;
+    while(n!=0)
+    {
+        rem=n%2;
+        ans=pow(10,i)*rem+ ans;
+        n/=2;
+        i++;
+    }
+cout<<"binary no. is for "<<number<<"is: "<<ans;
+    return 0;
+}
